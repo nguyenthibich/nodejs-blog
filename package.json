@@ -1,14 +1,16 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
   },
   "name": "blog",
   "version": "1.0.0",
   "description": "Blog",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect index.js"
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass -w src/resources/scss/app.scss src/public/css/app.css"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,9 @@
   },
   "homepage": "https://github.com/nguyenthibich/nodejs-blog#readme",
   "devDependencies": {
+    "bootstrap": "^5.2.2",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
   }
 }
